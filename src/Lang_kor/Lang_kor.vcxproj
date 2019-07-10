@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{619E1689-6EFC-4DB0-8F13-1487EE7DCD73}</ProjectGuid>
+    <RootNamespace>Lang_kor</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\ZIVELAB\SM6\Resource\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\$(Configuration)\Resource\Kor\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName)6</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)6</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LANG_KOR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LANG_KOR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="LangDll.cpp" />
+    <ClCompile Include="StdAfx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\save1.ico" />
+    <None Include="icon_ivmen\ivmandiff.ico" />
+    <None Include="icon_ivmen\ivmansolar.ico" />
+    <None Include="icon_ivmen\ivmantafel.ico" />
+    <None Include="newicon\burn1.ico" />
+    <None Include="SM_ICON1\Calib.ico" />
+    <None Include="SM_ICON1\Converter.ico" />
+    <None Include="SM_ICON\temp1.ico" />
+    <None Include="SM_ICON\temp2.ico" />
+    <None Include="SM_ICON\tempY.ico" />
+    <None Include="weisbmp\bmp00001.bmp" />
+    <None Include="weisbmp\bmp00002.bmp" />
+    <None Include="weisbmp\bmp00003.bmp" />
+    <None Include="titlefinal\bright.bmp" />
+    <None Include="icon\calibration.ico" />
+    <None Include="weisicon24x24\Clip.ico" />
+    <None Include="SM_ICON\cnp.ico" />
+    <None Include="weisicon24x24\Condredraw.ico" />
+    <None Include="weisicon24x24\convexcel24.ico" />
+    <None Include="weisicon24x24\convtext24.ico" />
+    <None Include="SM_ICON\csvsf.ico" />
+    <None Include="weisicon24x24\cursoroff.ico" />
+    <None Include="weisicon24x24\cursoron.ico" />
+    <None Include="newicon\cx1.ico" />
+    <None Include="newicon\cx1_1.ico" />
+    <None Include="newicon\d.ico" />
+    <None Include="iconadd\deselect.ico" />
+    <None Include="weisicon24x24\dotoff.ico" />
+    <None Include="weisicon24x24\doton.ico" />
+    <None Include="newicon\excel file.ico" />
+    <None Include="ico_sm\ExtDevice.ico" />
+    <None Include="newicon\Files-text.ico" />
+    <None Include="icon\graphformat.ico" />
+    <None Include="titlenew\graphset.ico" />
+    <None Include="titlefinal\grey.bmp" />
+    <None Include="weisicon24x24\gridoff.ico" />
+    <None Include="weisicon24x24\gridon.ico" />
+    <None Include="weisicon24x24\grpavg.ico" />
+    <None Include="weisicon24x24\Grpbode.ico" />
+    <None Include="weisicon24x24\grpcv.ico" />
+    <None Include="weisicon24x24\grpcyc.ico" />
+    <None Include="weisicon24x24\grpnyquist.ico" />
+    <None Include="weisicon24x24\grptafel.ico" />
+    <None Include="weisbmp\i577.bmp" />
+    <None Include="newicon\ico00003.ico" />
+    <None Include="newicon\ico00007.ico" />
+    <None Include="newicon\ico00008.ico" />
+    <None Include="newicon\ico00009.ico" />
+    <None Include="newicon\icon1.ico" />
+    <None Include="newicon\icon2.ico" />
+    <None Include="weisicon24x24\ico00001.ico" />
+    <None Include="weisicon24x24\ico00002.ico" />
+    <None Include="weisicon24x24\icon3.ico" />
+    <None Include="weisicon24x24\icon5.ico" />
+    <None Include="weisicon24x24\idr_ctrl.ico" />
+    <None Include="weisicon24x24\idr_main.ico" />
+    <None Include="newicon\idr_weis.ico" />
+    <None Include="titlenew\ivman1.ico" />
+    <None Include="weisicon24x24\idr_resr.ico" />
+    <None Include="weisicon24x24\ivman24.ico" />
+    <None Include="icon\ivt1.ico" />
+    <None Include="newicon\jump.ico" />
+    <None Include="weisbmp\landscape.bmp" />
+    <None Include="weisicon24x24\legand.ico" />
+    <None Include="weisicon24x24\lineoff.ico" />
+    <None Include="weisicon24x24\lineon.ico" />
+    <None Include="weisbmp\mainfram.bmp" />
+    <None Include="weisicon24x24\move.ico" />
+    <None Include="weisicon24x24\moveOff.ico" />
+    <None Include="iconadd\multicontrol.ico" />
+    <None Include="iconadd\multireal.ico" />
+    <None Include="newicon\n.ico" />
+    <None Include="weisbmp\next1.bmp" />
+    <None Include="titlefinal\normal.bmp" />
+    <None Include="newicon\open.ico" />
+    <None Include="weisicon24x24\opendata24.ico" />
+    <None Include="weisicon32x32\OpenData32.ico" />
+    <None Include="weisbmp\p22.bmp" />
+    <None Include="newicon\pause.ico" />
+    <None Include="titlenew\pauseg.ico" />
+    <None Include="weisbmp\PLAY.bmp" />
+    <None Include="newicon\play.ico" />
+    <None Include="titlenew\playg.ico" />
+    <None Include="weisbmp\portrait.bmp" />
+    <None Include="weisbmp\prev1.bmp" />
+    <None Include="weisicon24x24\print.ico" />
+    <None Include="SM_ICON\qvsv.ico" />
+    <None Include="weisicon24x24\rawdata24.ico" />
+    <None Include="weisicon24x24\redraw.ico" />
+    <None Include="icon\reload.ico" />
+    <None Include="SM_ICON\restoff.ico" />
+    <None Include="SM_ICON\reston.ico" />
+    <None Include="newicon\s.ico" />
+    <None Include="icon\save.ico" />
+    <None Include="newicon\schview.ico" />
+    <None Include="iconadd\select.ico" />
+    <None Include="weisicon24x24\seqview.ico" />
+    <None Include="iconadd\simplemonitor.ico" />
+    <None Include="iconadd\singlecontrol.ico" />
+    <None Include="newicon\skip.ico" />
+    <None Include="titlenew\skipg.ico" />
+    <None Include="ico_sm\SM Splash_72ppi.bmp" />
+    <None Include="SM_ICON\sm.ico" />
+    <None Include="SM_ICON\sm1.ico" />
+    <None Include="SM_ICON\sm2.ico" />
+    <None Include="SM_ICON\sm_sch.ico" />
+    <None Include="newicon\stop.ico" />
+    <None Include="titlenew\stopg.ico" />
+    <None Include="ico_sm\thunder.ico" />
+    <None Include="ico_sm\thunderbw.ico" />
+    <None Include="res\toolbar1.bmp" />
+    <None Include="weisbmp\toolbard.bmp" />
+    <None Include="weisbmp\toolbarh.bmp" />
+    <None Include="res\tree_ctrl.bmp" />
+    <None Include="weisicon24x24\UnloadGraph.ico" />
+    <None Include="icon_new\Untitled - 5.ico" />
+    <None Include="icon_new\Untitled - 8.ico" />
+    <None Include="titlenew\usboff.ico" />
+    <None Include="titlenew\usbon.ico" />
+    <None Include="titlenew\voi.ico" />
+    <None Include="titlenew\voig.ico" />
+    <None Include="newicon\winding.ico" />
+    <None Include="titlenew\zman1.ico" />
+    <None Include="weisicon24x24\zman24.ico" />
+    <None Include="weisbmp\ZOOM.bmp" />
+    <None Include="weisicon24x24\zoom.ico" />
+    <None Include="weisicon24x24\zoomoff.ico" />
+    <None Include="weisicon24x24\zoomout.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource_kor.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

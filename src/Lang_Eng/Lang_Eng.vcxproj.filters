@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LangDll.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="weisbmp\bmp00001.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisbmp\bmp00002.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisbmp\bmp00003.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="titlefinal\bright.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="icon\calibration.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\Clip.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="SM_ICON\cnp.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\Condredraw.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\convexcel24.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\convtext24.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="SM_ICON\csvsf.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\cursoroff.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\cursoron.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="newicon\cx1.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="newicon\cx1_1.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="newicon\d.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="iconadd\deselect.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\dotoff.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\doton.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="newicon\excel file.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="ico_sm\ExtDevice.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="newicon\Files-text.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="icon\graphformat.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="titlenew\graphset.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="titlefinal\grey.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\gridoff.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\gridon.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\grpavg.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\Grpbode.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\grpcv.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\grpcyc.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\grpnyquist.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\grptafel.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisbmp\i577.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="newicon\ico00003.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="newicon\ico00007.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="newicon\ico00008.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="newicon\ico00009.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="newicon\icon1.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="newicon\icon2.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\icon3.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\idr_ctrl.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\idr_main.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="newicon\idr_weis.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="titlenew\ivman1.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\ivman24.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="icon\ivt1.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="newicon\jump.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisbmp\landscape.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\legand.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\lineoff.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\lineon.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisbmp\mainfram.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\move.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\moveOff.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="iconadd\multicontrol.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="iconadd\multireal.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="newicon\n.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisbmp\next1.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="titlefinal\normal.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="newicon\open.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\opendata24.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon32x32\OpenData32.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisbmp\p22.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="newicon\pause.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="titlenew\pauseg.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisbmp\PLAY.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="newicon\play.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="titlenew\playg.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisbmp\portrait.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisbmp\prev1.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\print.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="SM_ICON\qvsv.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\rawdata24.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\redraw.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="icon\reload.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="SM_ICON\restoff.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="SM_ICON\reston.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="newicon\s.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="icon\save.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="newicon\schview.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="iconadd\select.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\seqview.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="iconadd\simplemonitor.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="iconadd\singlecontrol.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="newicon\skip.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="titlenew\skipg.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="ico_sm\SM Splash_72ppi.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="SM_ICON\sm.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="SM_ICON\sm1.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="SM_ICON\sm2.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="SM_ICON\sm_sch.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="newicon\stop.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="titlenew\stopg.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="ico_sm\thunder.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="ico_sm\thunderbw.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\toolbar1.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisbmp\toolbard.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisbmp\toolbarh.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\tree_ctrl.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\UnloadGraph.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="icon_new\Untitled - 5.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="icon_new\Untitled - 8.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="titlenew\usboff.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="titlenew\usbon.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="titlenew\voi.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="titlenew\voig.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="newicon\winding.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="titlenew\zman1.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\zman24.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisbmp\ZOOM.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\zoom.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\zoomoff.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\zoomout.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="icon_ivmen\ivmantafel.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="icon_ivmen\ivmansolar.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="icon_ivmen\ivmandiff.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\icon5.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\ico00001.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\ico00002.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="weisicon24x24\idr_resr.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="newicon\burn1.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="SM_ICON1\Converter.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="SM_ICON1\Calib.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="icon\save1.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="SM_ICON\tempY.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="SM_ICON\temp1.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="SM_ICON\temp2.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource_Eng.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

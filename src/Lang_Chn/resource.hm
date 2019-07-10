@@ -1,0 +1,4 @@
+// Microsoft Visual C++ generated Help ID include file.
+// Used by WEIS_Manager.rc
+//
+#define HIDC_TECHTREE                   0x80d0043f    // IDD_TECHNIQDLG [영어(미국)]

@@ -1849,7 +1849,7 @@ BEGIN
             VALUE "FileDescription", "스마트매니저 6버젼의 한국어 리소스"
             VALUE "FileVersion", "6.6.9.0"
             VALUE "InternalName", "Lang_kor6.dll"
-            VALUE "LegalCopyright", " 2015 (c) WonATech  All rights reserved."
+            VALUE "LegalCopyright", "2015 (c) WonATech  All rights reserved."
             VALUE "LegalTrademarks", "ZIVE SM"
             VALUE "OriginalFilename", "Lang_kor6.dll"
             VALUE "ProductName", "ZIVE SmartManager"

@@ -2925,7 +2925,7 @@ BEGIN
             VALUE "FileDescription", "English language resource of SMART Manager6"
             VALUE "FileVersion", "6.6.9.0"
             VALUE "InternalName", "Lang_Eng6.dll"
-            VALUE "LegalCopyright", " 2015 (c) WonATech  All rights reserved."
+            VALUE "LegalCopyright", "2015 (c) WonATech  All rights reserved."
             VALUE "LegalTrademarks", "ZIVE SM"
             VALUE "OriginalFilename", "Lang_Eng6.dll"
             VALUE "ProductName", "ZIVE SmartManager"

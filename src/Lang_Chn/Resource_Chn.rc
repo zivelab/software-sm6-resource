@@ -1806,31 +1806,21 @@ VS_VERSION_INFO VERSIONINFO
 BEGIN
     BLOCK "StringFileInfo"
     BEGIN
-        BLOCK "080404e4"
+        BLOCK "080404b0"
         BEGIN
             VALUE "CompanyName", "WonATech Co.,Ltd"
-            VALUE "FileDescription", "Chinese language resource of SMART Manager6"
+            VALUE "FileDescription", "Simplfied Chinese language resource of Smart Manager6."
             VALUE "FileVersion", "6.6.9.0"
-            VALUE "InternalName", "Lang_Chn6.dll"
-            VALUE "LegalCopyright", " 2015 (c) WonATech  All rights reserved."
-            VALUE "LegalTrademarks", "ZIVE SM"
-            VALUE "OriginalFilename", "Lang_Chn6.dll"
+            VALUE "InternalName", "Lang_Chn.dll"
+            VALUE "LegalCopyright", "2015 (c) WonATech  All rights reserved."
+            VALUE "OriginalFilename", "Lang_Chn.dll"
             VALUE "ProductName", "ZIVE SmartManager"
             VALUE "ProductVersion", "6.6.9.0"
-            VALUE "产品名称", "Chinese language resource of SMART Manager6"
-            VALUE "产品版本", "6, 6, 9, 0"
-            VALUE "公司名称", "WonATech Co.,Ltd"
-            VALUE "内部名称", "Lang_Chn6.dll"
-            VALUE "原始文件名", "Lang_Chn6.dll"
-            VALUE "文件版本", "6, 6, 9, 0"
-            VALUE "文件说明", "Smart Manager"
-            VALUE "法律版权", " 2015 (c) WonATech  保留所有权利"
-            VALUE "注册商标", "ZIVE SM"
         END
     END
     BLOCK "VarFileInfo"
     BEGIN
-        VALUE "Translation", 0x804, 1252
+        VALUE "Translation", 0x804, 1200
     END
 END
 

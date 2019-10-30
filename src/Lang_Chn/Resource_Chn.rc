@@ -1792,8 +1792,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 6,6,8,8
- PRODUCTVERSION 6,6,8,8
+ FILEVERSION 6,6,9,0
+ PRODUCTVERSION 6,6,9,0
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -1806,23 +1806,23 @@ VS_VERSION_INFO VERSIONINFO
 BEGIN
     BLOCK "StringFileInfo"
     BEGIN
-        BLOCK "040904e4"
+        BLOCK "080404e4"
         BEGIN
             VALUE "CompanyName", "WonATech Co.,Ltd"
             VALUE "FileDescription", "Chinese language resource of SMART Manager6"
-            VALUE "FileVersion", "6.6.8.8"
+            VALUE "FileVersion", "6.6.9.0"
             VALUE "InternalName", "Lang_Chn6.dll"
             VALUE "LegalCopyright", " 2015 (c) WonATech  All rights reserved."
             VALUE "LegalTrademarks", "ZIVE SM"
             VALUE "OriginalFilename", "Lang_Chn6.dll"
             VALUE "ProductName", "ZIVE SmartManager"
-            VALUE "ProductVersion", "6.6.8.8"
+            VALUE "ProductVersion", "6.6.9.0"
             VALUE "产品名称", "Chinese language resource of SMART Manager6"
-            VALUE "产品版本", "6, 6, 8, 8"
+            VALUE "产品版本", "6, 6, 9, 0"
             VALUE "公司名称", "WonATech Co.,Ltd"
             VALUE "内部名称", "Lang_Chn6.dll"
             VALUE "原始文件名", "Lang_Chn6.dll"
-            VALUE "文件版本", "6, 6, 8, 8"
+            VALUE "文件版本", "6, 6, 9, 0"
             VALUE "文件说明", "Smart Manager"
             VALUE "法律版权", " 2015 (c) WonATech  保留所有权利"
             VALUE "注册商标", "ZIVE SM"
@@ -1830,7 +1830,7 @@ BEGIN
     END
     BLOCK "VarFileInfo"
     BEGIN
-        VALUE "Translation", 0x409, 1252
+        VALUE "Translation", 0x804, 1252
     END
 END
 
@@ -19817,6 +19817,26 @@ BEGIN
     ID_WINSTR_0505          "Current convention"
     ID_WINSTR_0506          "Anodic"
     ID_WINSTR_0507          "Cathodic"
+    ID_WINSTR_0508          "Cable select"
+    ID_WINSTR_0509          "Sequence"
+    ID_WINSTR_0510          "Cut Off Condition"
+    ID_WINSTR_0511          "Misc. setting"
+    ID_WINSTR_0512          "Add"
+    ID_WINSTR_0513          "Delete"
+    ID_WINSTR_0514          "Copy"
+    ID_WINSTR_0515          "Cut"
+    ID_WINSTR_0516          "Paste[dn]"
+    ID_WINSTR_0517          "Insert[up]"
+    ID_WINSTR_0518          "Insert[dn]"
+    ID_WINSTR_0519          "Apply to CH"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINSTR_0520          "Save"
+    ID_WINSTR_0521          "Save as"
+    ID_WINSTR_0522          "View test information"
+    ID_WINSTR_0523          "Close"
 END
 
 #endif    // 吝惫绢(埃眉, 吝惫) resources

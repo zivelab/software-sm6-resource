@@ -1990,6 +1990,22 @@
 #define ID_WINSTR_0505                  63505
 #define ID_WINSTR_0506                  63506
 #define ID_WINSTR_0507                  63507
+#define ID_WINSTR_0508                  63508
+#define ID_WINSTR_0509                  63509
+#define ID_WINSTR_0510                  63510
+#define ID_WINSTR_0511                  63511
+#define ID_WINSTR_0512                  63512
+#define ID_WINSTR_0513                  63513
+#define ID_WINSTR_0514                  63514
+#define ID_WINSTR_0515                  63515
+#define ID_WINSTR_0516                  63516
+#define ID_WINSTR_0517                  63517
+#define ID_WINSTR_0518                  63518
+#define ID_WINSTR_0519                  63519
+#define ID_WINSTR_0520                  63520
+#define ID_WINSTR_0521                  63521
+#define ID_WINSTR_0522                  63522
+#define ID_WINSTR_0523                  63523
 #define ID_CARRAY_ESRTITLE              64000
 #define ID_CARRAY_MONTH                 64001
 #define ID_CARRAY_FILTER                64002
@@ -2266,7 +2282,7 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        492
+#define _APS_NEXT_RESOURCE_VALUE        510
 #define _APS_NEXT_COMMAND_VALUE         32874
 #define _APS_NEXT_CONTROL_VALUE         2024
 #define _APS_NEXT_SYMED_VALUE           105

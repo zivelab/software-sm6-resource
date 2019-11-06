@@ -18,7 +18,7 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// ЗС±№ѕо(ґлЗС№О±№) resources
+// Корейский (Корея) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
 LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
@@ -60,12 +60,12 @@ END
 
 #endif    // APSTUDIO_INVOKED
 
-#endif    // ЗС±№ѕо(ґлЗС№О±№) resources
+#endif    // Корейский (Корея) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
 /////////////////////////////////////////////////////////////////////////////
-// ·ЇЅГѕЖѕо(·ЇЅГѕЖ) resources
+// Русский (Россия) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
 LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
@@ -448,9 +448,9 @@ STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSM
 CAPTION "About WEIS_Manager"
 FONT 8, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
-    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
     LTEXT           "Smart Manager ",IDC_PROGNAME,43,15,231,8,SS_NOPREFIX
-    LTEXT           " 2015 (c) WonATech  All rights reserved.",IDC_COPYLIGHT,43,27,178,8
+    LTEXT           " 2015 (c) WonATech. Все права защищены",IDC_COPYLIGHT,43,27,178,8
     DEFPUSHBUTTON   "OK",IDOK,224,32,50,16,WS_GROUP
 END
 
@@ -1024,7 +1024,7 @@ BEGIN
     EDITTEXT        IDC_CALIB5,15,97,61,12,ES_AUTOHSCROLL
     PUSHBUTTON      "RUN",IDC_EXEC5,79,97,23,12
     EDITTEXT        IDC_CALIBREAD5,104,97,61,12,ES_AUTOHSCROLL
-    GROUPBOX        "< CALIBRATION >",IDC_STATIC,7,7,169,106
+    GROUPBOX        "< Калибровка >",IDC_STATIC,7,7,169,106
 END
 
 IDD_BATDLG DIALOGEX 0, 0, 526, 167
@@ -1526,24 +1526,24 @@ STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Установки измерений ESR"
 FONT 10, "Tahoma", 400, 0, 0x0
 BEGIN
-    DEFPUSHBUTTON   "установка",IDOK,169,131,50,14
-    PUSHBUTTON      "отмена",IDCANCEL,223,131,50,14
-    LTEXT           "выбор канала",IDC_STATIC,10,11,51,9
+    DEFPUSHBUTTON   "Установка",IDOK,169,131,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,223,131,50,14
+    LTEXT           "Выбор канала",IDC_STATIC,10,11,51,9
     COMBOBOX        IDC_CBOESRCH,62,10,43,61,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "Частота(Hz)",IDC_STATIC,29,64,42,8
+    LTEXT           "Частота(Hz)",IDC_STATIC,15,64,42,8
     LTEXT           "Режим управления",IDC_STATIC,15,80,67,8
-    LTEXT           "Amplitude(V)",IDC_ESRTITAMP,150,80,48,9
+    LTEXT           "Амплитуда(В)",IDC_ESRTITAMP,150,80,48,9
     LTEXT           "Задержка перед измерением(s)",IDC_STATIC,14,96,109,8
-    LTEXT           "файл данных",IDC_STATIC,10,25,48,8
-    LTEXT           "скорость измерения",IDC_STATIC,37,113,83,8
+    LTEXT           "Файл данных",IDC_STATIC,10,27,48,8
+    LTEXT           "Скорость измерения",IDC_STATIC,37,113,83,8
     LTEXT           "Static",IDC_ESRVIEWFILENAME,63,27,193,22,SS_SUNKEN
     EDITTEXT        IDC_EDITESRFREQ,82,64,62,12,ES_AUTOHSCROLL
     COMBOBOX        IDC_CBOESRMODE,82,79,62,42,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
-    EDITTEXT        IDC_EDITESRAMP,197,78,62,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITESRAMP,200,78,62,12,ES_AUTOHSCROLL
     EDITTEXT        IDC_EDITESRTIME,126,94,62,12,ES_AUTOHSCROLL
     COMBOBOX        IDC_CBOESRSPEED,126,112,62,33,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
-    GROUPBOX        "[ условия измерения ]",IDC_STATIC,7,51,265,77
-    PUSHBUTTON      "Создание нового файла данных",IDC_BTESRCHGFILE,135,12,119,12
+    GROUPBOX        "[ Условия измерения ]",IDC_STATIC,7,51,265,77
+    PUSHBUTTON      "Создание нового файла данных",IDC_BTESRCHGFILE,135,10,119,12
 END
 
 IDD_AC_ESR DIALOGEX 0, 0, 529, 222
@@ -17195,11 +17195,11 @@ BEGIN
         MENUITEM "Настройка печати(&P)",        ID_FILE_PRINT_SETUP
         MENUITEM SEPARATOR
         MENUITEM "Установки(&D)",               ID_SYSTEM_DEVICEUTILITY
-        MENUITEM "Zero offset adjustment(&C)",  ID_SYSTEM_CONFIGURATIONCHANNEL
-        MENUITEM "User Calibration(&U)",        ID_SYSTEM_USERCALIBRATION
+        MENUITEM "Установка нуля(&C)",          ID_SYSTEM_CONFIGURATIONCHANNEL
+        MENUITEM "Калибровка прибора(&U)",      ID_SYSTEM_USERCALIBRATION
         MENUITEM "Системные лимиты(&M)",        ID_EXPERIMENT_SETDEFAULTSYSTEMLIMIT
         MENUITEM SEPARATOR
-        MENUITEM "Firmware update(&U)",         ID_SYSTEM_FIRMWAREUPDATE
+        MENUITEM "Обновление прошивки(&U)",     ID_SYSTEM_FIRMWAREUPDATE
     END
     POPUP "Эксперимент(&E)"
     BEGIN
@@ -17281,11 +17281,11 @@ BEGIN
         MENUITEM "Настройка печати(&P)",        ID_FILE_PRINT_SETUP
         MENUITEM SEPARATOR
         MENUITEM "Установки(&D)",               ID_SYSTEM_DEVICEUTILITY
-        MENUITEM "Zero offset adjustment(&C)",  ID_SYSTEM_CONFIGURATIONCHANNEL
-        MENUITEM "User Calibration(&U)",        ID_SYSTEM_USERCALIBRATION
+        MENUITEM "Установка нуля(&C)",          ID_SYSTEM_CONFIGURATIONCHANNEL
+        MENUITEM "Калибровка прибора(&U)",      ID_SYSTEM_USERCALIBRATION
         MENUITEM "Системные лимиты(&M)",        ID_EXPERIMENT_SETDEFAULTSYSTEMLIMIT
         MENUITEM SEPARATOR
-        MENUITEM "Firmware update(&U)",         ID_SYSTEM_FIRMWAREUPDATE
+        MENUITEM "Обновление прошивки(&U)",     ID_SYSTEM_FIRMWAREUPDATE
     END
     POPUP "Эксперимент(&E)"
     BEGIN
@@ -17367,11 +17367,11 @@ BEGIN
         MENUITEM "Настройка печати(&P)",        ID_FILE_PRINT_SETUP
         MENUITEM SEPARATOR
         MENUITEM "Установки(&D)",               ID_SYSTEM_DEVICEUTILITY
-        MENUITEM "Zero offset adjustment(&C)",  ID_SYSTEM_CONFIGURATIONCHANNEL
-        MENUITEM "User Calibration(&U)",        ID_SYSTEM_USERCALIBRATION
+        MENUITEM "Установка нуля(&C)",          ID_SYSTEM_CONFIGURATIONCHANNEL
+        MENUITEM "Калибровка прибора(&U)",      ID_SYSTEM_USERCALIBRATION
         MENUITEM "Системные лимиты(&M)",        ID_EXPERIMENT_SETDEFAULTSYSTEMLIMIT
         MENUITEM SEPARATOR
-        MENUITEM "Firmware update(&U)",         ID_SYSTEM_FIRMWAREUPDATE
+        MENUITEM "Обновление прошивки(&U)",     ID_SYSTEM_FIRMWAREUPDATE
     END
     POPUP "Эксперимент(&E)"
     BEGIN
@@ -17539,11 +17539,11 @@ BEGIN
         MENUITEM "Настройка печати(&P)",        ID_FILE_PRINT_SETUP
         MENUITEM SEPARATOR
         MENUITEM "Установки(&D)",               ID_SYSTEM_DEVICEUTILITY
-        MENUITEM "Zero offset adjustment(&C)",  ID_SYSTEM_CONFIGURATIONCHANNEL
-        MENUITEM "User Calibration(&U)",        ID_SYSTEM_USERCALIBRATION
+        MENUITEM "Установка нуля(&C)",          ID_SYSTEM_CONFIGURATIONCHANNEL
+        MENUITEM "Калибровка прибора(&U)",      ID_SYSTEM_USERCALIBRATION
         MENUITEM "Системные лимиты(&M)",        ID_EXPERIMENT_SETDEFAULTSYSTEMLIMIT
         MENUITEM SEPARATOR
-        MENUITEM "Firmware update(&U)",         ID_SYSTEM_FIRMWAREUPDATE
+        MENUITEM "Обновление прошивки(&U)",     ID_SYSTEM_FIRMWAREUPDATE
     END
     POPUP "Эксперимент(&E)"
     BEGIN
@@ -17625,11 +17625,11 @@ BEGIN
         MENUITEM "Настройка печати(&P)",        ID_FILE_PRINT_SETUP
         MENUITEM SEPARATOR
         MENUITEM "Установки(&D)",               ID_SYSTEM_DEVICEUTILITY
-        MENUITEM "Zero offset adjustment(&C)",  ID_SYSTEM_CONFIGURATIONCHANNEL
-        MENUITEM "User Calibration(&U)",        ID_SYSTEM_USERCALIBRATION
+        MENUITEM "Установка нуля(&C)",          ID_SYSTEM_CONFIGURATIONCHANNEL
+        MENUITEM "Калибровка прибора(&U)",      ID_SYSTEM_USERCALIBRATION
         MENUITEM "Системные лимиты(&M)",        ID_EXPERIMENT_SETDEFAULTSYSTEMLIMIT
         MENUITEM SEPARATOR
-        MENUITEM "Firmware update(&U)",         ID_SYSTEM_FIRMWAREUPDATE
+        MENUITEM "Обновление прошивки(&U)",     ID_SYSTEM_FIRMWAREUPDATE
     END
     POPUP "Эксперимент(&E)"
     BEGIN
@@ -17711,11 +17711,11 @@ BEGIN
         MENUITEM "Настройка печати(&P)",        ID_FILE_PRINT_SETUP
         MENUITEM SEPARATOR
         MENUITEM "Установки(&D)",               ID_SYSTEM_DEVICEUTILITY
-        MENUITEM "Zero offset adjustment(&C)",  ID_SYSTEM_CONFIGURATIONCHANNEL
-        MENUITEM "User Calibration(&U)",        ID_SYSTEM_USERCALIBRATION
+        MENUITEM "Установка нуля(&C)",          ID_SYSTEM_CONFIGURATIONCHANNEL
+        MENUITEM "Калибровка прибора(&U)",      ID_SYSTEM_USERCALIBRATION
         MENUITEM "Системные лимиты(&M)",        ID_EXPERIMENT_SETDEFAULTSYSTEMLIMIT
         MENUITEM SEPARATOR
-        MENUITEM "Firmware update(&U)",         ID_SYSTEM_FIRMWAREUPDATE
+        MENUITEM "Обновление прошивки(&U)",     ID_SYSTEM_FIRMWAREUPDATE
     END
     POPUP "Эксперимент(&E)"
     BEGIN
@@ -17797,11 +17797,11 @@ BEGIN
         MENUITEM "Настройка печати(&P)",        ID_FILE_PRINT_SETUP
         MENUITEM SEPARATOR
         MENUITEM "Установки(&D)",               ID_SYSTEM_DEVICEUTILITY
-        MENUITEM "Zero offset adjustment(&C)",  ID_SYSTEM_CONFIGURATIONCHANNEL
-        MENUITEM "User Calibration(&U)",        ID_SYSTEM_USERCALIBRATION
+        MENUITEM "Смещение нуля(&C)",           ID_SYSTEM_CONFIGURATIONCHANNEL
+        MENUITEM "Калибровка прибора(&U)",      ID_SYSTEM_USERCALIBRATION
         MENUITEM "Системные лимиты(&M)",        ID_EXPERIMENT_SETDEFAULTSYSTEMLIMIT
         MENUITEM SEPARATOR
-        MENUITEM "Firmware update(&U)",         ID_SYSTEM_FIRMWAREUPDATE
+        MENUITEM "Обновление прошивки(&U)",     ID_SYSTEM_FIRMWAREUPDATE
     END
     POPUP "Эксперимент(&E)"
     BEGIN
@@ -17883,11 +17883,11 @@ BEGIN
         MENUITEM "Настройка печати(&P)",        ID_FILE_PRINT_SETUP
         MENUITEM SEPARATOR
         MENUITEM "Установки(&D)",               ID_SYSTEM_DEVICEUTILITY
-        MENUITEM "Zero offset adjustment(&C)",  ID_SYSTEM_CONFIGURATIONCHANNEL
-        MENUITEM "User Calibration(&U)",        ID_SYSTEM_USERCALIBRATION
+        MENUITEM "Установка нуля(&C)",          ID_SYSTEM_CONFIGURATIONCHANNEL
+        MENUITEM "Калибровка прибора(&U)",      ID_SYSTEM_USERCALIBRATION
         MENUITEM "Системные лимиты(&M)",        ID_EXPERIMENT_SETDEFAULTSYSTEMLIMIT
         MENUITEM SEPARATOR
-        MENUITEM "Firmware update(&U)",         ID_SYSTEM_FIRMWAREUPDATE
+        MENUITEM "Обновление прошивки(&U)",     ID_SYSTEM_FIRMWAREUPDATE
     END
     POPUP "Эксперимент(&E)"
     BEGIN
@@ -17969,11 +17969,11 @@ BEGIN
         MENUITEM "Настройка печати(&P)",        ID_FILE_PRINT_SETUP
         MENUITEM SEPARATOR
         MENUITEM "Установки(&D)",               ID_SYSTEM_DEVICEUTILITY
-        MENUITEM "Zero offset adjustment(&C)",  ID_SYSTEM_CONFIGURATIONCHANNEL
-        MENUITEM "User Calibration(&U)",        ID_SYSTEM_USERCALIBRATION
+        MENUITEM "Установка нуля(&C)",          ID_SYSTEM_CONFIGURATIONCHANNEL
+        MENUITEM "Калибровка прибора(&U)",      ID_SYSTEM_USERCALIBRATION
         MENUITEM "Системные лимиты(&M)",        ID_EXPERIMENT_SETDEFAULTSYSTEMLIMIT
         MENUITEM SEPARATOR
-        MENUITEM "Firmware update(&U)",         ID_SYSTEM_FIRMWAREUPDATE
+        MENUITEM "Обновление прошивки(&U)",     ID_SYSTEM_FIRMWAREUPDATE
     END
     POPUP "Панель управления(&C)"
     BEGIN
@@ -18020,11 +18020,11 @@ BEGIN
         MENUITEM "Настройка печати(&P)",        ID_FILE_PRINT_SETUP
         MENUITEM SEPARATOR
         MENUITEM "Установки(&D)",               ID_SYSTEM_DEVICEUTILITY
-        MENUITEM "Zero offset adjustment(&C)",  ID_SYSTEM_CONFIGURATIONCHANNEL
-        MENUITEM "User Calibration(&U)",        ID_SYSTEM_USERCALIBRATION
+        MENUITEM "Установка нуля(&C)",          ID_SYSTEM_CONFIGURATIONCHANNEL
+        MENUITEM "Калибровка прибора(&U)",      ID_SYSTEM_USERCALIBRATION
         MENUITEM "Системные лимиты(&M)",        ID_EXPERIMENT_SETDEFAULTSYSTEMLIMIT
         MENUITEM SEPARATOR
-        MENUITEM "Firmware update(&U)",         ID_SYSTEM_FIRMWAREUPDATE
+        MENUITEM "Обновление прошивки(&U)",     ID_SYSTEM_FIRMWAREUPDATE
     END
     POPUP "Эксперимент(&E)"
     BEGIN
@@ -18106,11 +18106,11 @@ BEGIN
         MENUITEM "Настройка печати(&P)",        ID_FILE_PRINT_SETUP
         MENUITEM SEPARATOR
         MENUITEM "Установки(&D)",               ID_SYSTEM_DEVICEUTILITY
-        MENUITEM "Zero offset adjustment(&C)",  ID_SYSTEM_CONFIGURATIONCHANNEL
-        MENUITEM "User Calibration(&U)",        ID_SYSTEM_USERCALIBRATION
+        MENUITEM "Установка нуля(&C)",          ID_SYSTEM_CONFIGURATIONCHANNEL
+        MENUITEM "Калибровка прибора(&U)",      ID_SYSTEM_USERCALIBRATION
         MENUITEM "Системные лимиты(&M)",        ID_EXPERIMENT_SETDEFAULTSYSTEMLIMIT
         MENUITEM SEPARATOR
-        MENUITEM "Firmware update(&U)",         ID_SYSTEM_FIRMWAREUPDATE
+        MENUITEM "Обновление прошивки(&U)",     ID_SYSTEM_FIRMWAREUPDATE
     END
     POPUP "Эксперимент(&E)"
     BEGIN
@@ -18192,11 +18192,11 @@ BEGIN
         MENUITEM "Настройка печати(&P)",        ID_FILE_PRINT_SETUP
         MENUITEM SEPARATOR
         MENUITEM "Установки(&D)",               ID_SYSTEM_DEVICEUTILITY
-        MENUITEM "Zero offset adjustment(&C)",  ID_SYSTEM_CONFIGURATIONCHANNEL
-        MENUITEM "User Calibration(&U)",        ID_SYSTEM_USERCALIBRATION
+        MENUITEM "Установка нуля(&C)",          ID_SYSTEM_CONFIGURATIONCHANNEL
+        MENUITEM "Калибровка прибора(&U)",      ID_SYSTEM_USERCALIBRATION
         MENUITEM "Системные лимиты(&M)",        ID_EXPERIMENT_SETDEFAULTSYSTEMLIMIT
         MENUITEM SEPARATOR
-        MENUITEM "Firmware update(&U)",         ID_SYSTEM_FIRMWAREUPDATE
+        MENUITEM "Обновление прошивки(&U)",     ID_SYSTEM_FIRMWAREUPDATE
     END
     POPUP "Панель управления(&C)"
     BEGIN
@@ -18304,6 +18304,16 @@ BEGIN
     0
 END
 
+IDD_AC_ESR_CFGDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_CALIBDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -18400,7 +18410,7 @@ BEGIN
     ID_MSG_0053             "Не удается считать сообщение устройства: "
     ID_MSG_0054             "Канал не найден."
     ID_MSG_0055             "Неопознанное устройство."
-    ID_MSG_0056             "Программа выполняется. \nДаже если Вы выйдете из программы сейчас, эксперимент будет продолжен, а данные будут сохраняться в памяти ниструмента. При повторном запуске программы данные, сохраненные в памяти инструмента будут автоматически перемещены в память ПК. \nЗавершить программу?"
+    ID_MSG_0056             "Программа выполняется. \nДаже если выйти из программы сейчас, эксперимент будет продолжен, а данные будут сохраняться в памяти инструмента. При повторном запуске программы данные, сохраненные в памяти инструмента будут автоматически перемещены в память ПК. \nЗакрыть Smart Manager?"
     ID_MSG_0057             "Вы уверены?"
     ID_MSG_0058             "Устройство занято."
     ID_MSG_0059             "Максимум файлов:"
@@ -18414,7 +18424,7 @@ STRINGTABLE
 BEGIN
     ID_MSG_0032             "Не выбран канал."
     ID_MSG_0033             "Не выбрана шкала."
-    ID_MSG_0034             "Калибровочная информация будет перезаписана. Вы уверены?"
+    ID_MSG_0034             "Калибровочная информация будет перезаписана. Продолжить??"
     ID_MSG_0035             "Не удается прочитать заголовок."
     ID_MSG_0036             "Данные не найдены."
     ID_MSG_0037             "Неверные входные данные."
@@ -18439,15 +18449,15 @@ BEGIN
     ID_MSG_0020             "Не удается сохранить файл Excel"
     ID_MSG_0021             "Нет связи с инструментом ZIVE."
     ID_MSG_0022             "Файл программы поврежден или имеет неверный формат."
-    ID_MSG_0023             "Проверяю удаленное управление."
-    ID_MSG_0024             "Не удалось создать тестовый файл."
+    ID_MSG_0023             "Проверка удаленного управления."
+    ID_MSG_0024             "Не удалось создать файл данных."
     ID_MSG_0025             "Канал сейчас не работает."
     ID_MSG_0026             "Канал сейчас не приостановлен."
     ID_MSG_0027             "Интерфейс занят."
     ID_MSG_0028             "Ошибка пакетного файла."
     ID_MSG_0029             "Устройство не найдено."
     ID_MSG_0030             "Не удалось создать файл."
-    ID_MSG_0031             "Подходящая модель не найдена ! \n продолжить?"
+    ID_MSG_0031             "Подходящая модель не найдена. \n Продолжить?"
 END
 
 STRINGTABLE
@@ -18455,7 +18465,7 @@ BEGIN
     ID_MSG_0001             "Файл не найден."
     ID_MSG_0002             "Неверный формат программы."
     ID_MSG_0003             "Файл с таким именем уже существует. \n\n Перезаписать его?"
-    ID_MSG_0004             "Этот файл уже открыт!! Перезапись не удалась."
+    ID_MSG_0004             "Этот файл уже открыт. Перезапись не удалась."
     ID_MSG_0005             "Сохранить пакетный файл"
     ID_MSG_0006             "Открыть пакетный файл"
     ID_MSG_0007             "Пакетная программа"
@@ -18547,22 +18557,22 @@ END
 
 STRINGTABLE
 BEGIN
-    ID_FILE_MRU_FILE1       "Открыть этот документ"
-    ID_FILE_MRU_FILE2       "Открыть этот документ"
-    ID_FILE_MRU_FILE3       "Открыть этот документ"
-    ID_FILE_MRU_FILE4       "Открыть этот документ"
-    ID_FILE_MRU_FILE5       "Открыть этот документ"
-    ID_FILE_MRU_FILE6       "Открыть этот документ"
-    ID_FILE_MRU_FILE7       "Открыть этот документ"
-    ID_FILE_MRU_FILE8       "Открыть этот документ"
-    ID_FILE_MRU_FILE9       "Открыть этот документ"
-    ID_FILE_MRU_FILE10      "Открыть этот документ"
-    ID_FILE_MRU_FILE11      "Открыть этот документ"
-    ID_FILE_MRU_FILE12      "Открыть этот документ"
-    ID_FILE_MRU_FILE13      "Открыть этот документ"
-    ID_FILE_MRU_FILE14      "Открыть этот документ"
-    ID_FILE_MRU_FILE15      "Открыть этот документ"
-    ID_FILE_MRU_FILE16      "Открыть этот документ"
+    ID_FILE_MRU_FILE1       "Открыть документ"
+    ID_FILE_MRU_FILE2       "Открыть документ"
+    ID_FILE_MRU_FILE3       "Открыть документ"
+    ID_FILE_MRU_FILE4       "Открыть документ"
+    ID_FILE_MRU_FILE5       "Открыть документ"
+    ID_FILE_MRU_FILE6       "Открыть документ"
+    ID_FILE_MRU_FILE7       "Открыть документ"
+    ID_FILE_MRU_FILE8       "Открыть документ"
+    ID_FILE_MRU_FILE9       "Открыть документ"
+    ID_FILE_MRU_FILE10      "Открыть документ"
+    ID_FILE_MRU_FILE11      "Открыть документ"
+    ID_FILE_MRU_FILE12      "Открыть документ"
+    ID_FILE_MRU_FILE13      "Открыть документ"
+    ID_FILE_MRU_FILE14      "Открыть документ"
+    ID_FILE_MRU_FILE15      "Открыть документ"
+    ID_FILE_MRU_FILE16      "Открыть документ"
 END
 
 STRINGTABLE
@@ -18592,7 +18602,7 @@ BEGIN
                             "Панель статуса каналов \n Статус каналов"
     ID_CONTROLPANEL_CHANNELSREALTIMEGRAPH 
                             "Графики в реальном времени для всех каналов\n Графики реального времени"
-    ID_WINDOW_ALLCLOSE      "Закрыть вседочерние окна \nЗакрыть окно"
+    ID_WINDOW_ALLCLOSE      "Закрыть все дочерние окна \nЗакрыть окно"
     ID_STRIPCHART           "Дминамическая диаграмма \n Динамическая диаграмма"
     ID_CONTROLPANEL_STRIPCHART 
                             "Динамическая диаграмма \n Динамическая диаграмма"
@@ -18605,8 +18615,8 @@ STRINGTABLE
 BEGIN
     ID_CONTROLPANNEL_REGISTRATIONTECH 
                             "Настройка графиков реального времени \n Настройка графиков реального времени"
-    ID_GRAPH_EISGRAPH       "Импеданс \n View EIS Graph"
-    ID_GRAPH_CYCLEGRAPH     "Циклирование \n View Cycle graph"
+    ID_GRAPH_EISGRAPH       "Импедансные графики\n Импедансные"
+    ID_GRAPH_CYCLEGRAPH     "Графики циклирования \n Циклирование"
     ID_SYSTEM_DEVICEUTILITY "Системные установки \nУстановки"
 END
 
@@ -18644,7 +18654,7 @@ END
 
 STRINGTABLE
 BEGIN
-    ID_MSG_0192             "Not found temperature controller."
+    ID_MSG_0192             "Контроллер температуры не найден."
     ID_TOOLMSG_0000         "Выберите канал."
     ID_TOOLMSG_0001         "Режим просмотра."
     ID_TOOLMSG_0002         "Старт."
@@ -18667,7 +18677,7 @@ BEGIN
     ID_TOOLMSG_0015         "Следующая группа."
     ID_TOOLMSG_0016         "Перейти к группе."
     ID_TOOLMSG_0017         "Приостановить/Продолжить группу."
-    ID_TOOLMSG_0018         "Group select sequence file."
+    ID_TOOLMSG_0018         "Назначить программу группе каналов."
     ID_TOOLMSG_0019         "Выбрать все."
     ID_TOOLMSG_0020         "Отмена выбора."
     ID_TOOLMSG_0021         "Загрузка данные теста."
@@ -18732,7 +18742,7 @@ BEGIN
     ID_TOOLMSG_0068         "Пауза."
     ID_TOOLMSG_0069         "Продолжить."
     ID_TOOLMSG_0070         "Пропустить."
-    ID_TOOLMSG_0071         "RUN IVMAN Differential Analysis"
+    ID_TOOLMSG_0071         "Запустить IVMAN Differential Analysis"
 END
 
 STRINGTABLE
@@ -18769,7 +18779,7 @@ BEGIN
     ID_MSG_0153             "Конвертация в Excel завершена!\nОткрыть папку с файлом?"
     ID_MSG_0154             "Модуль конвертации в Excel не найден."
     ID_MSG_0155             "'%s' имеет неверный формат."
-    ID_MSG_0156             """Added device."""
+    ID_MSG_0156             "Добавлено устройство"
 END
 
 STRINGTABLE
@@ -18822,10 +18832,10 @@ BEGIN
     ID_WINSTR_0032          "Pass range"
     ID_WINSTR_0033          "Канал не действует."
     ID_WINSTR_0034          "Индекс"
-    ID_WINSTR_0035          "неизвестная ошибка!"
+    ID_WINSTR_0035          "Неизвестная ошибка."
     ID_WINSTR_0036          "ошибка выполнения команды!"
     ID_WINSTR_0037          "система занята!"
-    ID_WINSTR_0038          "нехватка памяти!"
+    ID_WINSTR_0038          "Недостаточно памяти."
     ID_WINSTR_0039          "ошибка записи usb!"
 END
 
@@ -19085,7 +19095,7 @@ BEGIN
     ID_WINSTR_0243          "DC файлы"
     ID_WINSTR_0244          "EIS файлы"
     ID_WINSTR_0245          "DC+EIS файлы"
-    ID_WINSTR_0246          "Initialize process"
+    ID_WINSTR_0246          "Инициализация"
     ID_WINSTR_0247          "Исходный вид"
 END
 
@@ -19094,7 +19104,7 @@ BEGIN
     ID_WINSTR_0248          "Загрузка и промсмотр информации"
     ID_WINSTR_0249          "Загрузка"
     ID_WINSTR_0250          "Загрузка и промсмотр данных"
-    ID_WINSTR_0251          "Total process"
+    ID_WINSTR_0251          "Всего выполнено"
     ID_WINSTR_0252          "Создать DC-файл Excel"
     ID_WINSTR_0253          "Создать EIS-файл Excel"
     ID_WINSTR_0254          "Создать DC/EIS-файл Excel"
@@ -19103,8 +19113,8 @@ BEGIN
     ID_WINSTR_0257          "Печать EIS-данных"
     ID_WINSTR_0258          "DC-данные"
     ID_WINSTR_0259          "EIS-данные"
-    ID_WINSTR_0260          "Test Memo"
-    ID_WINSTR_0261          "Seq. Memo"
+    ID_WINSTR_0260          "Информация об измерении"
+    ID_WINSTR_0261          "Инфо о программе"
     ID_WINSTR_0262          "Методика"
     ID_WINSTR_0263          "Шкала"
 END
@@ -19164,14 +19174,14 @@ BEGIN
     ID_WINSTR_0306          "Емкость"
     ID_WINSTR_0307          "Ач"
     ID_WINSTR_0308          "Введите число"
-    ID_WINSTR_0309          "Start test configuration"
-    ID_WINSTR_0310          "Start group test configuration"
+    ID_WINSTR_0309          "Запустить на одном канале"
+    ID_WINSTR_0310          "Запустить на группе каналов"
     ID_WINSTR_0311          "Сохранить последние данные как..."
 END
 
 STRINGTABLE
 BEGIN
-    ID_WINSTR_0312          "Выберите папку для сохранения !"
+    ID_WINSTR_0312          "Выберите папку для сохранения"
     ID_WINSTR_0313          "Каналы"
     ID_WINSTR_0314          "Устройства"
     ID_WINSTR_0315          "Общие"
@@ -19179,7 +19189,7 @@ BEGIN
     ID_WINSTR_0317          "Дата прошивки DSP"
     ID_WINSTR_0318          "I RangeCount"
     ID_WINSTR_0319          "Макс. ток"
-    ID_WINSTR_0320          "Max Voltage"
+    ID_WINSTR_0320          "Max потенциал"
     ID_WINSTR_0321          "I-шкала FRA (A)"
     ID_WINSTR_0322          "V-шкала FRA (В)"
     ID_WINSTR_0323          "AUX"
@@ -19203,8 +19213,8 @@ BEGIN
     ID_WINSTR_0337          "Вход AUX 3(В)"
     ID_WINSTR_0338          "Кан.конф."
     ID_WINSTR_0339          "Отмена"
-    ID_WINSTR_0340          "Выполняется калибровака !"
-    ID_WINSTR_0341          "Overall progress !"
+    ID_WINSTR_0340          "Выполняется калибровка"
+    ID_WINSTR_0341          "Завершено"
     ID_WINSTR_0342          "выполнено"
     ID_WINSTR_0343          "ПРОВЕРКА"
 END
@@ -19331,27 +19341,27 @@ END
 
 STRINGTABLE
 BEGIN
-    ID_WINSTR_0440          "License"
+    ID_WINSTR_0440          "Лицензия"
     ID_WINSTR_0441          "BAT"
     ID_WINSTR_0442          "EAS"
     ID_WINSTR_0443          "COR"
     ID_WINSTR_0444          "EIS"
     ID_WINSTR_0445          "FRA"
-    ID_WINSTR_0446          "License Code"
-    ID_WINSTR_0447          "Ch No."
-    ID_WINSTR_0448          "Device"
-    ID_WINSTR_0449          "Dev Ch."
-    ID_WINSTR_0450          "Yes"
-    ID_WINSTR_0451          "No"
-    ID_WINSTR_0452          "IR EIS Frequency(Hz)"
-    ID_WINSTR_0453          "IR EIS Amplitude(A)"
-    ID_WINSTR_0454          "IR EIS Amplitude(V)"
-    ID_WINSTR_0455          "Not initialized memory."
+    ID_WINSTR_0446          "Лицензионный код"
+    ID_WINSTR_0447          "Канал"
+    ID_WINSTR_0448          "Устройство"
+    ID_WINSTR_0449          "Кан.устр."
+    ID_WINSTR_0450          "Да"
+    ID_WINSTR_0451          "Нет"
+    ID_WINSTR_0452          "Частота IR EIS (Гц)"
+    ID_WINSTR_0453          "Амплитуда IR EIS (А)"
+    ID_WINSTR_0454          "Амплитуда IR EIS (В)"
+    ID_WINSTR_0455          "Не удалось инициализировать память прибора."
 END
 
 STRINGTABLE
 BEGIN
-    ID_WINSTR_0456          "Not matched model of memory."
+    ID_WINSTR_0456          "Не удалось определить тип памяти прибора."
     ID_WINSTR_0457          "Single sine Start(Hz)"
     ID_WINSTR_0458          "Multi sine start(Hz)"
     ID_WINSTR_0459          "Frequency(Hz)"
@@ -19481,11 +19491,11 @@ BEGIN
     ID_CARRAY_GRPCYCUNITYS  """Ah/g"",""Ah/g"",""Ah/g"",""%"",""Wh/g"",""Wh/g"",""Wh/g"",""%"",""V"",""V"",""V"",""V"",""V"",""%"",""%"",""Ah/g"",""Ah/g"","" "","" "",""W/g"",""W/g"","" "","" "","
     ID_CARRAY_UNIT_A        """A"","
     ID_CARRAY_UNIT_V        """V"","
-    ID_CARRAY_PACKAGE_ITEM  """Basic techniques"",""EIS package(EIS)"",""Energy package(BAT)"",""Corrosion package(COR)"",""Echem Analysis package(EAS)"","
+    ID_CARRAY_PACKAGE_ITEM  """Базовые методики (Basic)"",""Импедансные (EIS)"",""Исследования ХИТ (BAT)"",""Коррозионные (COR)"",""Электроаналитические (EAS)"","
     ID_CARRAY_BASICMITEM_ITEM 
-                            """Static"",""Transient"",""Dynamic"",""Ru Measurement"","
+                            """Статические"",""Переходные процессы"",""Динамические"",""Измерение Ru"","
     ID_CARRAY_BASICSITEM1_ITEM 
-                            """Potentiostatic"",""Galvanostatic"",""OCP Measurement"","
+                            """Потенциостат"",""Гальваностат"",""Измерение НРЦ"","
     ID_CARRAY_BASICSITEM2_ITEM 
                             """Double step potentiostatic"",""Double step galvanostatic"","
     ID_CARRAY_EISMITEM_ITEM """Static frequency scanning"",""Dynamic frequency scanning"",""Intermittent frequency scanning"",""Fixed frequency"",""Multisine"","
@@ -19513,40 +19523,40 @@ BEGIN
                             """Sequence files"",""Potentiostatic"",""Galvanostatic"",""OCP Measurement"",""Potential sweep"",""Current sweep"",""Cyclic voltammetry"",""Potentiostatic EIS"",""Galvanostatic EIS"",""OCP EIS"",""Pseudo galvanostatic EIS"",""Potentiodynamic PEIS"",""Potentiostatic HFR"",""Galvanostatic HFR"",""Potentiodynamic HFR"",""Multisine PEIS"",""Multisine GEIS"",""CC/CV Test"",""CC/CC Test"",""Discharge Test"",""EVS Test"",""Tafel"",""Polarization resistance"",""Potentiodynamic"",""Galvanodynamic"",""Cyclic polarization"",""Ecorr vs. time"",""Galvanic corrosion"",""RpEc trend"",""Reactivation potential"",""Critical pitting potential"",""Critical pitting temperature"",""Chronoamperometry"",""Chronopotentiometry"",""Chronocoulometry"",""Normal pulse voltammetry"",""Differential pulse voltammetry"",""Differential pulse amperometry"",""Reverse normal pulse voltammetry"",""Differential normal pulse voltammetry"",""Squarewave voltammetry"",""Linear sweep voltammetry"",""Sampled DC voltammetry"",""Galvanodynamic GEIS"",""Galvanoynamic HFR"",""Variable scan rate CV"",""Potentiostatic ECN"",""Galvanostatic ECN"",""ZRA mode ECN"",""PStat IV curve"",""GStat IV curve"",""Steadystate CV"",""P-Ru Measurement"",""Fast CV"",""Fast LSV"",""Fast potential sweep"",""G-Ru Measurement"",""Intermittent potentiostatic EIS"",""Intermittent galvanostatic EIS"",""GITT Test"",""PITT Test"",""Double step potentiostatic"",""Double step galvanostatic"",""ASTM Critical pitting temperature"","
     ID_CARRAY_TECHITEMLABEL1 """ "","
     ID_CARRAY_TECHITEMLABEL2 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Potential(V)"",""-Duration(s)"",""-Sample period(s)"",""Limit current(A)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Potential(V)"",""-Продолжительность(с)"",""-Sample period(s)"",""Limit current(A)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL3 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Current(A)"",""-Duration(s)"",""-Sample period(s)"",""Limit potential(V)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Current(A)"",""-Продолжительность(с)"",""-Sample period(s)"",""Limit potential(V)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL4 """Delay time(s)"",""Sample period(s)"","
     ID_CARRAY_TECHITEMLABEL5 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Quiet time(s)"",""Initial potential(V)"",""Final potential(V)"",""Scan rate(V/s)"",""Sample interval(V)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Фаза покоя(с)"",""Initial potential(V)"",""Final potential(V)"",""Scan rate(V/s)"",""Sample interval(V)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL6 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Initial current(A)"",""Final current(A)"",""Scan rate(A/s)"",""Sample period(s)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Initial current(A)"",""Final current(A)"",""Scan rate(A/s)"",""Sample period(s)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL7 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Deposition"",""-Potential(V)"",""-Duration(s)"",""Quiet time(s)"",""Initial potential(V)"",""Middle potential(V)"",""Final potential(V)"",""Scan rate(V/s)"",""Segment count"",""Sample interval(V)"",""Limit current(A)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Deposition"",""-Potential(V)"",""-Продолжительность(с)"",""Фаза покоя(с)"",""Initial potential(V)"",""Middle potential(V)"",""Final potential(V)"",""Scan rate(V/s)"",""Segment count"",""Sample interval(V)"",""Limit current(A)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL8 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Bias potential(V)"",""Amplitude(V)"",""Initial freq.(Hz)"",""Middle freq.(Hz)"",""Final freq.(Hz)"",""Sweep type"",""Density"",""Iteration"",""Init. I Range(A)"",""Speed"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Bias potential(V)"",""Amplitude(V)"",""Initial freq.(Hz)"",""Middle freq.(Hz)"",""Final freq.(Hz)"",""Sweep type"",""Density"",""Iteration"",""Init. I Range(A)"",""Speed"","
     ID_CARRAY_TECHITEMLABEL9 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Bias current(A)"",""Amplitude(A)"",""Initial freq.(Hz)"",""Middle freq.(Hz)"",""Final freq.(Hz)"",""Sweep type"",""Density"",""Iteration"",""Init. I Range(A)"",""Speed"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Bias current(A)"",""Amplitude(A)"",""Initial freq.(Hz)"",""Middle freq.(Hz)"",""Final freq.(Hz)"",""Sweep type"",""Density"",""Iteration"",""Init. I Range(A)"",""Speed"","
     ID_CARRAY_TECHITEMLABEL10 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Bias potential(V)"",""Amplitude(V)"",""Initial freq.(Hz)"",""Middle freq.(Hz)"",""Final freq.(Hz)"",""Sweep type"",""Wait time(s)"",""Density"",""Iteration"",""Init. I Range(A)"",""Speed"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Bias potential(V)"",""Amplitude(V)"",""Initial freq.(Hz)"",""Middle freq.(Hz)"",""Final freq.(Hz)"",""Sweep type"",""Wait time(s)"",""Density"",""Iteration"",""Init. I Range(A)"",""Speed"","
     ID_CARRAY_TECHITEMLABEL11 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Bias current(A)"",""Amplitude(A)"",""Amplitude(V)"",""Initial freq.(Hz)"",""Middle freq.(Hz)"",""Final freq.(Hz)"",""Sweep type"",""Density"",""Iteration"",""Init. I Range(A)"",""Speed"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Bias current(A)"",""Amplitude(A)"",""Amplitude(V)"",""Initial freq.(Hz)"",""Middle freq.(Hz)"",""Final freq.(Hz)"",""Sweep type"",""Density"",""Iteration"",""Init. I Range(A)"",""Speed"","
     ID_CARRAY_TECHITEMLABEL12 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Initial potential(V)"",""Final potential(V)"",""Step potential(V)"",""Amplitude(V)"",""Initial freq.(Hz)"",""Middle freq.(Hz)"",""Final freq.(Hz)"",""Sweep type"",""Density"",""Waiting(s)"",""Iteration"",""Init. I Range(A)"",""Speed"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Initial potential(V)"",""Final potential(V)"",""Step potential(V)"",""Amplitude(V)"",""Initial freq.(Hz)"",""Middle freq.(Hz)"",""Final freq.(Hz)"",""Sweep type"",""Density"",""Waiting(s)"",""Iteration"",""Init. I Range(A)"",""Speed"","
     ID_CARRAY_TECHITEMLABEL13 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Bias potential(V)"",""Amplitude(V)"",""frequency(Hz)"",""Interval(s)"",""TotalTime(s)"",""I Range(A)"",""Speed"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Bias potential(V)"",""Amplitude(V)"",""frequency(Hz)"",""Interval(s)"",""TotalTime(s)"",""I Range(A)"",""Speed"","
 END
 
 STRINGTABLE
 BEGIN
     ID_CARRAY_TECHITEMLABEL14 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Bias current(A)"",""Amplitude(A)"",""frequency(Hz)"",""Interval(s)"",""TotalTime(s)"",""I Range(A)"",""Speed"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Bias current(A)"",""Amplitude(A)"",""frequency(Hz)"",""Interval(s)"",""TotalTime(s)"",""I Range(A)"",""Speed"","
     ID_CARRAY_TECHITEMLABEL15 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Initial potential(V)"",""Final potential(V)"",""Step potential(V)"",""Amplitude(V)"",""frequency(Hz)"",""Waiting(s)"",""Iteration"",""I Range(A)"",""Speed"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Initial potential(V)"",""Final potential(V)"",""Step potential(V)"",""Amplitude(V)"",""frequency(Hz)"",""Waiting(s)"",""Iteration"",""I Range(A)"",""Speed"","
     ID_CARRAY_TECHITEMLABEL16 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Bias potential(V)"",""Amplitude(V)"",""SS Start freq.(Hz)"",""MS Start freq.(Hz)"",""Final freq.(Hz)"",""SS Density"",""I Range(A)"",""Speed"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Bias potential(V)"",""Amplitude(V)"",""SS Start freq.(Hz)"",""MS Start freq.(Hz)"",""Final freq.(Hz)"",""SS Density"",""I Range(A)"",""Speed"","
     ID_CARRAY_TECHITEMLABEL17 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Bias current(A)"",""Amplitude(A)"",""SS Start freq.(Hz)"",""MS Start freq.(Hz)"",""Final freq.(Hz)"",""SS Density"",""I Range(A)"",""Speed"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Bias current(A)"",""Amplitude(A)"",""SS Start freq.(Hz)"",""MS Start freq.(Hz)"",""Final freq.(Hz)"",""SS Density"",""I Range(A)"",""Speed"","
     ID_CARRAY_TECHITEMLABEL18 
                             """First action"",""Charge"",""-Const. charge"",""-Const. voltage(V)"",""-Charging time(s)"",""-Limit current(A)"",""-Limit |Q|(Ah)"",""-Rest time(s)"",""Discharge"",""-Const. discharge"",""-Const. voltage(V)"",""-Discharging time(s)"",""-Limit current(A)"",""-Limit |Q|(Ah)"",""-Rest time(s)"",""Cycle"",""Sampling"",""-Time(s)"",""-Delta voltage"",""-Delta current"",""IR Measure"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL19 
@@ -19554,85 +19564,85 @@ BEGIN
     ID_CARRAY_TECHITEMLABEL20 
                             """Const. discharge"",""Total time(s)"",""Limit voltage(V)"",""Sampling"",""-Time(s)"",""-Delta voltage"",""-Delta current"",""IR Measure"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL21 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Initial potential(V)"",""Middle potential(V)"",""Final potential(V)"",""Step potential(V)"",""Limit type"",""I Limit(A)/Min Time(s)"",""Sample period(s)"",""Segment"",""IR Measure"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Initial potential(V)"",""Middle potential(V)"",""Final potential(V)"",""Step potential(V)"",""Limit type"",""I Limit(A)/Min Time(s)"",""Sample period(s)"",""Segment"",""IR Measure"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL22 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Conditioning"",""-Potential(V)"",""-Duration(s)"",""Initial potential(V)"",""Final potential(V)"",""Scan rate(V/s)"",""Step size(V)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Conditioning"",""-Potential(V)"",""-Продолжительность(с)"",""Initial potential(V)"",""Final potential(V)"",""Scan rate(V/s)"",""Step size(V)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL23 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Conditioning"",""-Potential(V)"",""-Duration(s)"",""Initial potential(V)"",""Final potential(V)"",""Scan rate(V/s)"",""Step size(V)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Conditioning"",""-Potential(V)"",""-Продолжительность(с)"",""Initial potential(V)"",""Final potential(V)"",""Scan rate(V/s)"",""Step size(V)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL24 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Conditioning"",""-Potential(V)"",""-Duration(s)"",""Initial potential(V)"",""Final potential(V)"",""Scan rate(V/s)"",""Step size(V)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Conditioning"",""-Potential(V)"",""-Продолжительность(с)"",""Initial potential(V)"",""Final potential(V)"",""Scan rate(V/s)"",""Step size(V)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL25 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Conditioning"",""-Potential(V)"",""-Duration(s)"",""Initial current(mA)"",""Final current(mA)"",""Scan rate(mA/s)"",""Sampling(mA)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Conditioning"",""-Potential(V)"",""-Продолжительность(с)"",""Initial current(mA)"",""Final current(mA)"",""Scan rate(mA/s)"",""Sampling(mA)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL26 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Conditioning"",""-Potential(V)"",""-Duration(s)"",""Initial potential(V)"",""Middle potential(V)"",""Final potential(V)"",""Forward scan rate(V/s)"",""Reverse scan rate(V/s)"",""Step size(V)"",""Limit current(A/cm2)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Conditioning"",""-Potential(V)"",""-Продолжительность(с)"",""Initial potential(V)"",""Middle potential(V)"",""Final potential(V)"",""Forward scan rate(V/s)"",""Reverse scan rate(V/s)"",""Step size(V)"",""Limit current(A/cm2)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL27 
-                            """Conditioning"",""-Potential(V)"",""-Duration(s)"",""Stability(V/s)"",""Sample period(s)"",""Total time(s)"","
+                            """Conditioning"",""-Potential(V)"",""-Продолжительность(с)"",""Stability(V/s)"",""Sample period(s)"",""Total time(s)"","
     ID_CARRAY_TECHITEMLABEL28 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Sample period(s)"",""Total time(s)"",""Limit current(A/cm^2)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Sample period(s)"",""Total time(s)"",""Limit current(A/cm^2)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL29 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Conditioning"",""-Potential(V)"",""-Duration(s)"",""Initial potential(V)"",""Final potential(V)"",""Step size(V)"",""Scan rate(V/s)"",""Repeat time(s)"",""Sample period(s)"",""Total time(s)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Conditioning"",""-Potential(V)"",""-Продолжительность(с)"",""Initial potential(V)"",""Final potential(V)"",""Step size(V)"",""Scan rate(V/s)"",""Repeat time(s)"",""Sample period(s)"",""Total time(s)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
 END
 
 STRINGTABLE
 BEGIN
     ID_CARRAY_TECHITEMLABEL30 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Activation E(V)"",""Activation time(s)"",""Passivation E(V)"",""Passivation time(s)"",""Scan rate(mV/s)"",""Step size(V)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Activation E(V)"",""Activation time(s)"",""Passivation E(V)"",""Passivation time(s)"",""Scan rate(mV/s)"",""Step size(V)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL31 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Stimulation E(V)"",""-Duration(s)"",""-Sample time(s)"",""Repassivation"",""-Duration(s)"",""-Sample time(s)"",""I Limit(uA/cm2)"",""I Rate(uA/cm2/s)"",""Sample area(cm2)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Stimulation E(V)"",""-Продолжительность(с)"",""-Sample time(s)"",""Repassivation"",""-Продолжительность(с)"",""-Sample time(s)"",""I Limit(uA/cm2)"",""I Rate(uA/cm2/s)"",""Sample area(cm2)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL32 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Conditioning"",""-Potential(V)"",""-Duration(s)"",""Potential(V)"",""Initial temp.('C)"",""Final temp.('C)"",""Step temp.('C)"",""Duration(s)"",""Sample period(s)"",""Limit current(mA/cm2)"",""Delay Time"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Conditioning"",""-Potential(V)"",""-Продолжительность(с)"",""Potential(V)"",""Initial temp.('C)"",""Final temp.('C)"",""Step temp.('C)"",""Duration(s)"",""Sample period(s)"",""Limit current(mA/cm2)"",""Delay Time"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL33 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Quiet time(s)"",""Initial potential(V)"",""-Duration(s)"",""-Sample period(s)"",""Middle potential(V)"",""-Duration(s)"",""-Sample period(s)"",""Final potential(V)"",""-Duration(s)"",""-Sample period(s)"",""Limit current(A)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Фаза покоя(с)"",""Initial potential(V)"",""-Продолжительность(с)"",""-Sample period(s)"",""Middle potential(V)"",""-Продолжительность(с)"",""-Sample period(s)"",""Final potential(V)"",""-Продолжительность(с)"",""-Sample period(s)"",""Limit current(A)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL34 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Initial current(A)"",""-Duration(s)"",""-Sample period(s)"",""Middle current(A)"",""-Duration(s)"",""-Sample period(s)"",""Final current(A)"",""-Duration(s)"",""-Sample period(s)"",""Limit potential(V)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Initial current(A)"",""-Продолжительность(с)"",""-Sample period(s)"",""Middle current(A)"",""-Продолжительность(с)"",""-Sample period(s)"",""Final current(A)"",""-Продолжительность(с)"",""-Sample period(s)"",""Limit potential(V)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL35 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Quiet time(s)"",""Initial potential(V)"",""-Duration(s)"",""-Sample period(s)"",""Middle potential(V)"",""-Duration(s)"",""-Sample period(s)"",""Final potential(V)"",""-Duration(s)"",""-Sample period(s)"",""Limit current(A)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Фаза покоя(с)"",""Initial potential(V)"",""-Продолжительность(с)"",""-Sample period(s)"",""Middle potential(V)"",""-Продолжительность(с)"",""-Sample period(s)"",""Final potential(V)"",""-Продолжительность(с)"",""-Sample period(s)"",""Limit current(A)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL36 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Deposition"",""-Potential(V)"",""-Duration(s)"",""Quiet time(s)"",""Initial potential(V)"",""Final potential(V)"",""Step potential(V)"",""Pulse width(s)"",""-periode(s)"",""Sampling method"",""Limit current(A)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Deposition"",""-Potential(V)"",""-Продолжительность(с)"",""Фаза покоя(с)"",""Initial potential(V)"",""Final potential(V)"",""Step potential(V)"",""Pulse width(s)"",""-periode(s)"",""Sampling method"",""Limit current(A)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL37 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Deposition"",""-Potential(V)"",""-Duration(s)"",""Quiet time(s)"",""Initial potential(V)"",""Final potential(V)"",""Step potential(V)"",""Pulse height(V)"",""-Width(s)"",""-Periode(s)"",""Sampling method"",""Limit current(A)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Deposition"",""-Potential(V)"",""-Продолжительность(с)"",""Фаза покоя(с)"",""Initial potential(V)"",""Final potential(V)"",""Step potential(V)"",""Pulse height(V)"",""-Width(s)"",""-Periode(s)"",""Sampling method"",""Limit current(A)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL38 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Deposition"",""-Potential(V)"",""-Duration(s)"",""Quiet time(s)"",""Initial potential(V)"",""Clean potential(V)"",""-Duration(s)"",""Pulse1 potential(V)"",""-Duration(s)"",""Pulse2 potential(V)"",""-Duration(s)"",""Total time(s)"",""Sampling method"",""Limit current(A)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Deposition"",""-Potential(V)"",""-Продолжительность(с)"",""Фаза покоя(с)"",""Initial potential(V)"",""Clean potential(V)"",""-Продолжительность(с)"",""Pulse1 potential(V)"",""-Продолжительность(с)"",""Pulse2 potential(V)"",""-Продолжительность(с)"",""Total time(s)"",""Sampling method"",""Limit current(A)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL39 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Deposition"",""-Potential(V)"",""-Duration(s)"",""Quiet time(s)"",""Initial potential(V)"",""Final potential(V)"",""Step potential(V)"",""Pulse width(s)"",""-periode(s)"",""Sampling method"",""Limit current(A)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Deposition"",""-Potential(V)"",""-Продолжительность(с)"",""Фаза покоя(с)"",""Initial potential(V)"",""Final potential(V)"",""Step potential(V)"",""Pulse width(s)"",""-periode(s)"",""Sampling method"",""Limit current(A)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL40 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Deposition"",""-Potential(V)"",""-Duration(s)"",""Quiet time(s)"",""Initial potential(V)"",""Final potential(V)"",""Step potential(V)"",""Pulse Height(V)"",""1st Pulse Width(s)"",""2st Pulse Width(s)"",""Pulse Periode(s)"",""Sampling method"",""Limit current(A)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Deposition"",""-Potential(V)"",""-Продолжительность(с)"",""Фаза покоя(с)"",""Initial potential(V)"",""Final potential(V)"",""Step potential(V)"",""Pulse Height(V)"",""1st Pulse Width(s)"",""2st Pulse Width(s)"",""Pulse Periode(s)"",""Sampling method"",""Limit current(A)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL41 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Deposition"",""-Potential(V)"",""-Duration(s)"",""Quiet time(s)"",""Initial potential(V)"",""Final potential(V)"",""Step potential(V)"",""Frequency(Hz)"",""Pulse height(V)"",""-Duty(%)"",""Sampling method"",""Limit current(A)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Deposition"",""-Potential(V)"",""-Продолжительность(с)"",""Фаза покоя(с)"",""Initial potential(V)"",""Final potential(V)"",""Step potential(V)"",""Frequency(Hz)"",""Pulse height(V)"",""-Duty(%)"",""Sampling method"",""Limit current(A)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL42 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Deposition"",""-Potential(V)"",""-Duration(s)"",""Quiet time(s)"",""Initial potential(V)"",""Final potential(V)"",""Scan rate(V/s)"",""Sample interval(V)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Deposition"",""-Potential(V)"",""-Продолжительность(с)"",""Фаза покоя(с)"",""Initial potential(V)"",""Final potential(V)"",""Scan rate(V/s)"",""Sample interval(V)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL43 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Deposition"",""-Potential(V)"",""-Duration(s)"",""Quiet time(s)"",""Initial potential(V)"",""Final potential(V)"",""Step pontial(V)"",""Scan rate(V/s)"",""Step sampling"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Deposition"",""-Potential(V)"",""-Продолжительность(с)"",""Фаза покоя(с)"",""Initial potential(V)"",""Final potential(V)"",""Step pontial(V)"",""Scan rate(V/s)"",""Step sampling"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL44 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Initial current(A)"",""Final current(A)"",""Step current(A)"",""Amplitude(A)"",""Initial freq.(Hz)"",""Middle freq.(Hz)"",""Final freq.(Hz)"",""Sweep type"",""Density"",""Waiting(s)"",""Iteration"",""Init. I Range(A)"",""Speed"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Initial current(A)"",""Final current(A)"",""Step current(A)"",""Amplitude(A)"",""Initial freq.(Hz)"",""Middle freq.(Hz)"",""Final freq.(Hz)"",""Sweep type"",""Density"",""Waiting(s)"",""Iteration"",""Init. I Range(A)"",""Speed"","
     ID_CARRAY_TECHITEMLABEL45 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Initial current(A)"",""Final current(A)"",""Step current(A)"",""Amplitude(A)"",""frequency(Hz)"",""Waiting(s)"",""Iteration"",""I Range(A)"",""Speed"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Initial current(A)"",""Final current(A)"",""Step current(A)"",""Amplitude(A)"",""frequency(Hz)"",""Waiting(s)"",""Iteration"",""I Range(A)"",""Speed"","
 END
 
 STRINGTABLE
 BEGIN
     ID_CARRAY_TECHITEMLABEL46 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Quiet time(s)"",""Initial potential(V)"",""Middle potential(V)"",""Final potential(V)"",""Scan rate1(V/s)"",""Scan rate2(V/s)"",""Scan rate3(V/s)"",""Scan rate4(V/s)"",""Scan rate5(V/s)"",""Scan rate6(V/s)"",""Scan rate7(V/s)"",""Scan rate8(V/s)"",""Scan rate9(V/s)"",""Scan rate10(V/s)"",""Step size(V)"",""Limit current(A)"",""Step sampling"",""IR Measure"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Фаза покоя(с)"",""Initial potential(V)"",""Middle potential(V)"",""Final potential(V)"",""Scan rate1(V/s)"",""Scan rate2(V/s)"",""Scan rate3(V/s)"",""Scan rate4(V/s)"",""Scan rate5(V/s)"",""Scan rate6(V/s)"",""Scan rate7(V/s)"",""Scan rate8(V/s)"",""Scan rate9(V/s)"",""Scan rate10(V/s)"",""Step size(V)"",""Limit current(A)"",""Step sampling"",""IR Measure"","
     ID_CARRAY_TECHITEMLABEL47 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Applied V(V)"",""Sample time(s)"",""Block time(S)"",""Repeat time(s)"",""Total time(s)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Applied V(V)"",""Sample time(s)"",""Block time(S)"",""Repeat time(s)"",""Total time(s)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL48 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Applied I(A)"",""Sample time(s)"",""Block time(S)"",""Repeat time(s)"",""Total time(s)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Applied I(A)"",""Sample time(s)"",""Block time(S)"",""Repeat time(s)"",""Total time(s)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL49 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Sample time(s)"",""Block time(s)"",""Repeat time(s)"",""Total time(s)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Sample time(s)"",""Block time(s)"",""Repeat time(s)"",""Total time(s)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL50 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Initial potential(V)"",""Final potential(V)"",""Step pontial(V)"",""Scan rate(V/s)"",""Step sampling"",""IR Measure"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Initial potential(V)"",""Final potential(V)"",""Step pontial(V)"",""Scan rate(V/s)"",""Step sampling"",""IR Measure"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL51 
                             """Initial current(A)"",""Final current(A)"",""Step current(A)"",""Scan rate(A/s)"",""Step sampling"",""Limit potential(V)"",""IR Measure"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL52 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Deposition"",""-Potential(V)"",""-Duration(s)"",""Quiet time(s)"",""Initial potential(V)"",""Middle potential(V)"",""Final potential(V)"",""Step pontial(V)"",""Scan rate(V/s)"",""Segment count"",""Step sampling"",""IR Measure"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Deposition"",""-Potential(V)"",""-Продолжительность(с)"",""Фаза покоя(с)"",""Initial potential(V)"",""Middle potential(V)"",""Final potential(V)"",""Step pontial(V)"",""Scan rate(V/s)"",""Segment count"",""Step sampling"",""IR Measure"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL53 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Control(V)"",""On time(ms)"",""Sample duration(ms)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Control(V)"",""On time(ms)"",""Sample duration(ms)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL54 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Deposition"",""-Potential(V)"",""-Duration(s)"",""Quiet time(s)"",""Initial potential(V)"",""Middle potential(V)"",""Final potential(V)"",""Scan rate(V/s)"",""Segment count"",""Sample interval(V)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Deposition"",""-Potential(V)"",""-Продолжительность(с)"",""Фаза покоя(с)"",""Initial potential(V)"",""Middle potential(V)"",""Final potential(V)"",""Scan rate(V/s)"",""Segment count"",""Sample interval(V)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL55 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Deposition"",""-Potential(V)"",""-Duration(s)"",""Quiet time(s)"",""Initial potential(V)"",""Final potential(V)"",""Scan rate(V/s)"",""Sample interval(V)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Deposition"",""-Potential(V)"",""-Продолжительность(с)"",""Фаза покоя(с)"",""Initial potential(V)"",""Final potential(V)"",""Scan rate(V/s)"",""Sample interval(V)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL56 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Quiet time(s)"",""Initial potential(V)"",""Final potential(V)"",""Scan rate(V/s)"",""Sample interval(V)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Фаза покоя(с)"",""Initial potential(V)"",""Final potential(V)"",""Scan rate(V/s)"",""Sample interval(V)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL57 
                             " ""Control(A)"",""On time(ms)"",""Sample duration(ms)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL58 
@@ -19642,17 +19652,17 @@ BEGIN
     ID_CARRAY_TECHITEMLABEL60 
                             """First action"",""Control"",""Interval(s)"",""Rest limit type"",""-Time(s)"",""Charging limit(V)"",""Discharging limit(V)"",Sample period(s)"",""Segment"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL61 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Initial potential(V)"",""Middle potential(V)"",""Final potential(V)"",""Step potential(V)"",""Interval(V)"",""Rest limit type"",""-Time(s)"",""Sample period(s)"",""Segment"",""IR Measure"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Initial potential(V)"",""Middle potential(V)"",""Final potential(V)"",""Step potential(V)"",""Interval(V)"",""Rest limit type"",""-Time(s)"",""Sample period(s)"",""Segment"",""IR Measure"",""I Range(A)"","
 END
 
 STRINGTABLE
 BEGIN
     ID_CARRAY_TECHITEMLABEL62 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Initial potential(V)"",""-Duration(s)"",""-Sample period(s)"",""Final potential(V)"",""-Duration(s)"",""-Sample period(s)"",""Limit current(A)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Initial potential(V)"",""-Продолжительность(с)"",""-Sample period(s)"",""Final potential(V)"",""-Продолжительность(с)"",""-Sample period(s)"",""Limit current(A)"",""IR Comp."",""PF IR(ohm)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL63 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Initial current(A)"",""-Duration(s)"",""-Sample period(s)"",""Final current(A)"",""-Duration(s)"",""-Sample period(s)"",""Limit potential(V)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Initial current(A)"",""-Продолжительность(с)"",""-Sample period(s)"",""Final current(A)"",""-Продолжительность(с)"",""-Sample period(s)"",""Limit potential(V)"",""I Range(A)"","
     ID_CARRAY_TECHITEMLABEL64 
-                            """Initial delay"",""-Duration(s)"",""-Stability(V/s)"",""Conditioning"",""-Potential(V)"",""-Duration(s)"",""Initial temp.('C)"",""Step temp.('C/min)"",""Final temp.('C)"",""Potential(V)"",""Sample period(min)"",""Stop Criteria"",""-Limit current(uA/cm2)"",""-Duration(s)"",""I Range(A)"","
+                            """Начальная задержка"",""-Продолжительность(с)"",""-Дрейф(В/с)"",""Conditioning"",""-Potential(V)"",""-Продолжительность(с)"",""Initial temp.('C)"",""Step temp.('C/min)"",""Final temp.('C)"",""Potential(V)"",""Sample period(min)"",""Stop Criteria"",""-Limit current(uA/cm2)"",""-Продолжительность(с)"",""I Range(A)"","
     ID_CARRAY_BASICSITEM3_ITEM 
                             """Potential sweep"",""Current sweep"",""Cyclic voltammetry"",""Fast potential sweep"","
     ID_CARRAY_REALMONITEM   """Voltage"",""Current"",""Aux1"",""Aux2"",""Aux3 | IR"",""Temperature"",""LogI"",""Load"",""Sum Q"",""CurrentDensity"",""Power"",""Sum Wh"",""Exp. Ru"",""Lin. Ru"",""Blank"","
@@ -19675,10 +19685,10 @@ END
 
 STRINGTABLE
 BEGIN
-    ID_TOOLMSG_0072         "RUN IVMAN Photovoltaic Cell analysis"
-    ID_TOOLMSG_0073         "RUN IVMAN Tafel analysis"
-    ID_TOOLMSG_0074         "Temperature controller(TEMP-1000)"
-    ID_TOOLMSG_0075         "You can display or change the state of current convention. "
+    ID_TOOLMSG_0072         "Запустить IVMAN Photovoltaic Cell analysis"
+    ID_TOOLMSG_0073         "Запустить IVMAN Tafel analysis"
+    ID_TOOLMSG_0074         "Контроллер температуры (TEMP-1000)"
+    ID_TOOLMSG_0075         "Отобразить или изменить полярность тока"
 END
 
 STRINGTABLE
@@ -19687,14 +19697,14 @@ BEGIN
     ID_CARRAY_SEQTITLE17    """Step"",""Control"",""Type"",""Mode"",""Range"",""Ref."",""Value"",""Ref."",""Value"","""","""",""Op."",""Value"","""","""","""","""","
     ID_CARRAY_SEQTITLE18    """Step"",""Control"",""Configuration"",""Configuration"",""Configuration"",""Resistor(ohm)"",""Resistor(ohm)"",""Voltage(V)"",""Voltage(V)"","""","""",""Tag value(ohm)"",""Tag value(ohm)"","""","""","""","""","
     ID_CARRAY_SEQTITLE19    """Step"",""Control"",""Type"",""Mode"",""Range"",""Ref."",""Value"",""Ref."",""Value"","""","""",""Op."",""Value"","""","""","""","""","
-    ID_CARRAY_SEQTITLE20    """Step"",""Control"",""Configuration"",""Configuration"",""Configuration"",""Initial(A)"",""Initial(A)"",""Middle(A)"",""Middle(A)"",""Final(A)"",""Final(A)"",""Step(A)"",""Step(A)"",""Scanrate\r\n(A/s)"","""",""Quiet time(s)"",""Segments"","
-    ID_CARRAY_SEQTITLE21    """Step"",""Control"",""Type"",""Mode"",""Range"",""Ref."",""Value"",""Ref."",""Value"",""Ref."",""Value"","""",""Value"",""Scanrate(A/s)"","""",""Quiet time(s)"",""Segments"","
-    ID_CARRAY_SEQTITLE22    """Step"",""Control"",""Configuration"",""Configuration"",""Configuration"",""Initial(V)"",""Initial(V)"",""Middle(V)"",""Middle(V)"",""Final(V)"",""Final(V)"",""Step(V)"",""Step(V)"",""Scanrate\r\n(V/s)"","""",""Quiet time(s)"",""Segments"","
-    ID_CARRAY_SEQTITLE23    """Step"",""Control"",""Type"",""Mode"",""Range"",""Ref."",""Value"",""Ref."",""Value"",""Ref."",""Value"","""",""Value"",""Scanrate(V/s)"","""",""Quiet time(s)"",""Segments"","
-    ID_CARRAY_SEQTITLE24    """Step"",""Control"",""Configuration"",""Configuration"",""Configuration"",""Initial(A)"",""Initial(A)"",""Middle(A)"",""Middle(A)"",""Final(A)"",""Final(A)"",""Sample time(s)"",""Sample(A)"",""Scanrate\r\n(A/s)"","""",""Quiet time(s)"",""Segments"","
-    ID_CARRAY_SEQTITLE25    """Step"",""Control"",""Type"",""Mode"",""Range"",""Ref."",""Value"",""Ref."",""Value"",""Ref."",""Value"","""",""Value"",""Scanrate(A/s)"","""",""Quiet time(s)"",""Segments"","
-    ID_CARRAY_SEQTITLE26    """Step"",""Control"",""Configuration"",""Configuration"",""Configuration"",""Initial(V)"",""Initial(V)"",""Middle(V)"",""Middle(V)"",""Final(V)"",""Final(V)"",""Sample time(s)"",""Sample(V)"",""Scanrate\r\n(V/s)"","""",""Quiet time(s)"",""Segments"","
-    ID_CARRAY_SEQTITLE27    """Step"",""Control"",""Type"",""Mode"",""Range"",""Ref."",""Value"",""Ref."",""Value"",""Ref."",""Value"","""",""Value"",""Scanrate(V/s)"","""",""Quiet time(s)"",""Segments"","
+    ID_CARRAY_SEQTITLE20    """Step"",""Control"",""Configuration"",""Configuration"",""Configuration"",""Initial(A)"",""Initial(A)"",""Middle(A)"",""Middle(A)"",""Final(A)"",""Final(A)"",""Step(A)"",""Step(A)"",""Scanrate\r\n(A/s)"","""",""Фаза покоя(с)"",""Segments"","
+    ID_CARRAY_SEQTITLE21    """Step"",""Control"",""Type"",""Mode"",""Range"",""Ref."",""Value"",""Ref."",""Value"",""Ref."",""Value"","""",""Value"",""Scanrate(A/s)"","""",""Фаза покоя(с)"",""Segments"","
+    ID_CARRAY_SEQTITLE22    """Step"",""Control"",""Configuration"",""Configuration"",""Configuration"",""Initial(V)"",""Initial(V)"",""Middle(V)"",""Middle(V)"",""Final(V)"",""Final(V)"",""Step(V)"",""Step(V)"",""Scanrate\r\n(V/s)"","""",""Фаза покоя(с)"",""Segments"","
+    ID_CARRAY_SEQTITLE23    """Step"",""Control"",""Type"",""Mode"",""Range"",""Ref."",""Value"",""Ref."",""Value"",""Ref."",""Value"","""",""Value"",""Scanrate(V/s)"","""",""Фаза покоя(с)"",""Segments"","
+    ID_CARRAY_SEQTITLE24    """Step"",""Control"",""Configuration"",""Configuration"",""Configuration"",""Initial(A)"",""Initial(A)"",""Middle(A)"",""Middle(A)"",""Final(A)"",""Final(A)"",""Sample time(s)"",""Sample(A)"",""Scanrate\r\n(A/s)"","""",""Фаза покоя(с)"",""Segments"","
+    ID_CARRAY_SEQTITLE25    """Step"",""Control"",""Type"",""Mode"",""Range"",""Ref."",""Value"",""Ref."",""Value"",""Ref."",""Value"","""",""Value"",""Scanrate(A/s)"","""",""Фаза покоя(с)"",""Segments"","
+    ID_CARRAY_SEQTITLE26    """Step"",""Control"",""Configuration"",""Configuration"",""Configuration"",""Initial(V)"",""Initial(V)"",""Middle(V)"",""Middle(V)"",""Final(V)"",""Final(V)"",""Sample time(s)"",""Sample(V)"",""Scanrate\r\n(V/s)"","""",""Фаза покоя(с)"",""Segments"","
+    ID_CARRAY_SEQTITLE27    """Step"",""Control"",""Type"",""Mode"",""Range"",""Ref."",""Value"",""Ref."",""Value"",""Ref."",""Value"","""",""Value"",""Scanrate(V/s)"","""",""Фаза покоя(с)"",""Segments"","
     ID_CARRAY_SEQTITLE28    """Step"",""Control"",""Configuration"",""Configuration"",""Configuration"",""Initial(Hz)"",""Initial(Hz)"",""Middle(Hz)"",""Middle(Hz)"",""Final(Hz)"",""Final(Hz)"",""Bias(A)"",""Bias(A)"",""Amplitude\r\n(Arms)"",""Density"",""Wait time(s)"",""Iteration"","
     ID_CARRAY_SEQTITLE29    """Step"",""Control"",""Type"",""Mode"",""Range"",""Speed"",""Value"","""",""Value"","""",""Value"",""Ref."",""Value"",""Amplitude(Arms)"",""Density"",""Wait time(s)"",""Iteration"","
     ID_CARRAY_SEQTITLE30    """Step"",""Control"",""Configuration"",""Configuration"",""Configuration"",""Initial(Hz)"",""Initial(Hz)"",""Middle(Hz)"",""Middle(Hz)"",""Final(Hz)"",""Final(Hz)"",""Bias(A)"",""Bias(A)"",""Amplitude\r\n(Arms)"",""Density"",""Limit(V)"",""Iteration"","
@@ -19783,22 +19793,22 @@ END
 
 STRINGTABLE
 BEGIN
-    ID_MSG_0160             "File names can not contain the following characters:\n                      /   :   ?   ""   <   >   |"
-    ID_MSG_0161             "There is a running channel among the selected channels. \n    Can't be apply the information if there a running channel exists."
-    ID_MSG_0162             "Warning condition detected among the selected channels.\n Are you sure you want to apply the information?"
-    ID_MSG_0163             "was assigned for looping"
-    ID_MSG_0164             "Check step(s)"
-    ID_MSG_0165             "Middle potential and Final potential must be different value."
-    ID_MSG_0166             "Initial potential and Final potential must be different value."
-    ID_MSG_0167             "Initial current and Final current must be different value."
-    ID_MSG_0168             "Middle potential and Final potential must be different value."
-    ID_MSG_0169             "0 value in data sampling is invalid in sweep mode."
-    ID_MSG_0170             "0 value in step height  is invalid in step control mode."
-    ID_MSG_0171             "You must set different value for Middle value and Final value in Sweep-Cycle mode."
-    ID_MSG_0172             "You must set different value for initial value and Final value in Sweep-normal mode."
-    ID_MSG_0173             "If you have set the sampling speed fast, it's hard to start the experiment. please increase the sampling interval or the decrease scan rate."
-    ID_MSG_0174             "If the expected data pt's size is over instrument's memory size, please increase the sampling interval or the decrease scan rate."
-    ID_MSG_0175             "There are no steps founded in the schedule file."
+    ID_MSG_0160             "Имена файлов не должны содержать символы:\n                      /   :   ?   ""   <   >   |"
+    ID_MSG_0161             "На некоторых из выбранных каналов выполняется программа.\n Нельзя запустить выполнение программы на занятых каналах"
+    ID_MSG_0162             "На выбранных каналах параметры программы могут превысить системный лимит.\n Всё равно продолжить?"
+    ID_MSG_0163             "назначен для циклирования."
+    ID_MSG_0164             "Проверьте шаг(и)"
+    ID_MSG_0165             "Промежуточный и конечный потенциалы должны различаться."
+    ID_MSG_0166             "Начальный и конечный потенциалы должны различаться."
+    ID_MSG_0167             "Начальный и конечный ток должен различаться."
+    ID_MSG_0168             "Промежуточный и конечный потенциалы должны различаться."
+    ID_MSG_0169             "Нулевое значение скорости записи точек неприменимо в режиме развёртки."
+    ID_MSG_0170             "Нулевое значение приращения неприменимо в ступенчатом режиме."
+    ID_MSG_0171             "В режиме развёртки промежуточное и конечное значения должны различаться."
+    ID_MSG_0172             "В режиме развёртки начальное и конечное значения должны различаться."
+    ID_MSG_0173             "При высокой скорости записи данных старт эксперимента может быть затруднён. Увеличьте интервал между точками или снизьте скорость развёртки."
+    ID_MSG_0174             "Если ожидаемый объём данных превышает объем встроенной памяти прибора, увеличьте интервал между точками или снизьте скорость развёртки."
+    ID_MSG_0175             "В программе нет шагов."
 END
 
 STRINGTABLE
@@ -19863,9 +19873,9 @@ END
 
 STRINGTABLE
 BEGIN
-    ID_MSG_0176             "0 value in scan rate is invalid in sweep mode."
-    ID_MSG_0190             "0 value in scan rate  is invalid in step control mode."
-    ID_MSG_0191             "Fail condition detected among the selected channels.\n Are you sure you want to apply the information?"
+    ID_MSG_0176             "В режиме развёртки скорость развёртки должна отличаться от нуля."
+    ID_MSG_0190             "В ступенчатом режиме скорость развёртки должна отличаться от нуля."
+    ID_MSG_0191             "На выбранных каналах параметры программы превышают системный лимит.\n Всё равно продолжить?"
 END
 
 STRINGTABLE
@@ -19876,7 +19886,7 @@ BEGIN
     ID_WINSTR_0507          "Cathodic"
 END
 
-#endif    // ·ЇЅГѕЖѕо(·ЇЅГѕЖ) resources
+#endif    // Русский (Россия) resources
 /////////////////////////////////////////////////////////////////////////////
 
 

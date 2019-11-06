@@ -1,6 +1,6 @@
 //{{NO_DEPENDENCIES}}
-// Microsoft Visual C++їЎј­ »эјєЗС ЖчЗФ ЖДАПАФґПґЩ.
-// Resource_Rus.rcїЎј­ »зїлµЗ°н АЦЅАґПґЩ.
+// Включаемый файл, созданный в Microsoft Visual C++.
+// Используется Resource_Rus.rc
 //
 #define IDD_ABOUTBOX                    100
 #define IDP_OLE_INIT_FAILED             101

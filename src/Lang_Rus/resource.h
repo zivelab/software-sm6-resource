@@ -1,6 +1,6 @@
 //{{NO_DEPENDENCIES}}
-// Microsoft Visual C++에서 생성한 포함 파일입니다.
-// Resource_Rus.rc에서 사용되고 있습니다.
+// Microsoft Visual C++ generated include file.
+// Used by Resource_Rus.rc
 //
 #define IDD_ABOUTBOX                    100
 #define IDP_OLE_INIT_FAILED             101
@@ -2194,6 +2194,7 @@
 #define ID_CARRAY_IRCTRLTYPE            64186
 #define ID_CARRAY_EISSITEM3_ITEM        64187
 #define ID_CARRAY_BASICSITEM4_ITEM      64188
+#define ID_CARRAY_CALIBEIS              64189
 #define ID_CARRAY_EISSPEED_ITEM         64300
 #define ID_CARRAY_ZEROADJ_OPT           64301
 #define ID_CARRAY_CALIB_OPT             64302
@@ -2282,7 +2283,7 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        510
+#define _APS_NEXT_RESOURCE_VALUE        536
 #define _APS_NEXT_COMMAND_VALUE         32874
 #define _APS_NEXT_CONTROL_VALUE         2024
 #define _APS_NEXT_SYMED_VALUE           105

@@ -117,6 +117,7 @@
     <ClInclude Include="StdAfx.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="iconadd\pd1.ico" />
     <None Include="icon\save1.ico" />
     <None Include="icon_ivmen\ivmandiff.ico" />
     <None Include="icon_ivmen\ivmansolar.ico" />
@@ -124,6 +125,7 @@
     <None Include="newicon\burn1.ico" />
     <None Include="SM_ICON1\Calib.ico" />
     <None Include="SM_ICON1\Converter.ico" />
+    <None Include="SM_ICON\acv.ico" />
     <None Include="SM_ICON\temp1.ico" />
     <None Include="SM_ICON\temp2.ico" />
     <None Include="SM_ICON\tempY.ico" />

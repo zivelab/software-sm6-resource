@@ -415,6 +415,12 @@
     <None Include="SM_ICON\temp2.ico">
       <Filter>리소스 파일</Filter>
     </None>
+    <None Include="SM_ICON\acv.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="iconadd\pd1.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resource_kor.rc">

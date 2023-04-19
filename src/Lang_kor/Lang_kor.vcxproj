@@ -118,6 +118,7 @@
     <None Include="icon_ivmen\ivmandiff.ico" />
     <None Include="icon_ivmen\ivmansolar.ico" />
     <None Include="icon_ivmen\ivmantafel.ico" />
+    <None Include="icon_new\write.ico" />
     <None Include="newicon\burn1.ico" />
     <None Include="SM_ICON1\Calib.ico" />
     <None Include="SM_ICON1\Converter.ico" />

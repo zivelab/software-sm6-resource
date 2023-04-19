@@ -421,6 +421,9 @@
     <None Include="iconadd\pd1.ico">
       <Filter>리소스 파일</Filter>
     </None>
+    <None Include="icon_new\write.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resource_Eng.rc">
